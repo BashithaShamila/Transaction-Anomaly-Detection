@@ -1,0 +1,45 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Logs and reports
+*.log
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.history/
+
+# IDEs and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# dotenv and secrets
+.env
+.env.*
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
