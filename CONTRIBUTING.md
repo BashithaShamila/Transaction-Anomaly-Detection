@@ -2,11 +2,11 @@
 
 ## Branching Strategy
 
-- Use `feature/<short-description>` for new features.
-  - Example: `feature/anomaly-detector`
-- Use `fix/<short-description>` for bug fixes.
-  - Example: `fix/model-load-error`
-- Always create a pull request into `main` or `dev` branch with a clear description.
+-   Use `feature/<short-description>` for new features.
+    -   Example: `feature/anomaly-detector`
+-   Use `fix/<short-description>` for bug fixes.
+    -   Example: `fix/model-load-error`
+-   Always create a pull request into `main` or `dev` branch with a clear description.
 
 ## Project Structure
 
@@ -44,7 +44,7 @@ CONTRIBUTING.md
 ## Getting Started
 
 ```bash
-git clone https://github.com/your-org/transaction-anomaly-detection.git
+git clone https://github.com/Financial-Fraud-Detection-System/transaction-anomaly-detection.git
 cd transaction-anomaly-detection
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
@@ -69,20 +69,22 @@ We use [black](https://black.readthedocs.io/) for Python code formatting.
 
 To format code:
 
-``` bash
+```bash
 black .
-``` 
+```
 
 ## Run using Docker
 
-# Build the Docker image
+### Build the Docker image
+
 ```bash
-docker build -t your-repo-name .
+docker build -t transaction-anomaly-detection .
 ```
 
-# Run the container
+### Run the container
+
 ```bash
-docker run -p 8000:8000 your-repo-name
+docker run -p 8000:8000 transaction-anomaly-detection
 ```
 
 Happy coding! ✨
