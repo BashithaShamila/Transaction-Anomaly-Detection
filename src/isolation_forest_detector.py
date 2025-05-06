@@ -1,6 +1,3 @@
-# predict_script.py
-# Run this script directly using: python predict_script.py
-
 import numpy as np
 import logging
 import json
