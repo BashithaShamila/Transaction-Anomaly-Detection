@@ -10,19 +10,10 @@ COPY requirements.txt .
 # Install dependencies including the specific scikit-learn version
 RUN pip install --no-cache-dir -r requirements.txt 
 
-# Copy only the necessary directories and files
-# This excludes .git folders, .gitignore, and markdown files
+# Copy all application files
 COPY src/ ./src/
 COPY models/ ./models/
 COPY tests/ ./tests/
 
-# If you have any configuration files that are needed, copy them explicitly
-# For example:
-# COPY config.json .
-# COPY .env.example .env
-
-# Expose the port the app runs on
-EXPOSE 8000
-
-# Command to run the application
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Just run the prediction script
+CMD ["python", "-m", "src.predict_anomaly"]
