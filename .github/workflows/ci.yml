@@ -12,4 +12,5 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install -r requirements.txt
-      - run: pytest tests/
+      - run: docker build -t transaction-anomaly-detection .
+      - run: docker run transaction-anomaly-detection
